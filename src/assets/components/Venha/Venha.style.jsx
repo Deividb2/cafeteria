@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { fontes, cores } from '../../../GlobalStyle'
 
 export const Principal = styled.section `
-    background-color: #f7e5d6;
+    background-color: ${cores.bege};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +15,7 @@ export const Principal = styled.section `
 `
 
 export const TituloPrincipal = styled.h2 `
-    font-family: 'Playfair Display', serif; 
+    font-family: ${fontes.Playfair}; 
     font-size: 30px;
     font-weight: bold;
 
@@ -45,7 +46,7 @@ export const Box = styled.div `
 `
 
 export const Titulos = styled.h3 `
-    font-family: 'Playfair Display', serif;
+    font-family: ${fontes.Playfair};
     font-size: 22px;
     font-weight: 200;
     margin-bottom: 2rem;
@@ -57,7 +58,7 @@ export const Titulos = styled.h3 `
 `
 
 export const Informacoes = styled.span `
-    font-family: 'Heebo', sans-serif;
+    font-family: ${fontes.Heebo};
     font-size: 16px;
     font-weight: 200;
 `
@@ -65,7 +66,7 @@ export const Informacoes = styled.span `
 export const Linha = styled.div `
     height: 10rem;
     width: 1px;
-    background-color: #000;
+    background-color: ${cores.preto};
     display: none;
 
     @media (min-width: 768px) {

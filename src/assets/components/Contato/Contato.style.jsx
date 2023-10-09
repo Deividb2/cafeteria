@@ -1,12 +1,13 @@
 import styled from 'styled-components'
+import { fontes, cores } from '../../../GlobalStyle'
 
 export const Geral = styled.section `
     display: flex;
     flex-direction: column;
     padding: 3rem 1.5rem;
     gap: 4rem;
-    background-color: #404D3C;
-    color: #fff;
+    background-color: ${cores.verde};
+    color: ${cores.branco};
 
     @media (min-width: 768px) {
         flex-direction: row;
@@ -19,7 +20,7 @@ export const Colunas = styled.div `
 `
 export const Titulo = styled.h2 `
     font-size: 26px;
-    font-family: 'Playfair Display', serif;
+    font-family: ${fontes.Playfair};
     font-weight: 200;
 
     @media (min-width: 768px) {
@@ -34,7 +35,7 @@ export const DivSubTitulo = styled.div `
 
 export const Subtitulo = styled.span `
     font-size: 15px;
-    font-family: 'Heebo', sans-serif;
+    font-family: ${fontes.Heebo};
 
     @media (min-width: 768px) {
         font-size: 16px;
@@ -44,14 +45,14 @@ export const Label = styled.label ``
 
 export const Email = styled.input `
     outline: none;
-    border: 1px solid #fff;
+    border: 1px solid ${cores.branco};
     border-right: none;
     padding: 14px 7px;
     width: 80%;
     background-color: transparent;
-    color: #fff;
+    color: ${cores.branco};
     &::placeholder {
-        color: #fff;
+        color: ${cores.branco};
     }
 
     @media (min-width: 400px) and (max-width: 768px) {
@@ -60,11 +61,11 @@ export const Email = styled.input `
 `
 
 export const Enviar = styled.input `
-    border: 1px solid #fff;
+    border: 1px solid ${cores.branco};
     padding: 14px 5px;
     background-color: transparent;
     width: 20%;
-    color: #fff;
+    color: ${cores.branco};
 
     @media (min-width: 400px) and (max-width: 768px) {
         width: 15%;

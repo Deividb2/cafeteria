@@ -1,6 +1,6 @@
 import React from 'react'
 import Cabecalho from '../../components/Cabecalho/Cabecalho'
-import Banner from '../../components/Banner/Banner'
+import BannerHome from '../../components/Banner/BannerHome/BannerHome'
 import Ofertas from '../../components/Ofertas/Ofertas'
 import Alimentacao from '../../components/Alimentacao/Alimentacao'
 import Venha from '../../components/Venha/Venha'
@@ -13,7 +13,7 @@ export default function Home() {
     return (
         <>
             <Cabecalho />
-            <Banner />
+            <BannerHome />
             <Ofertas />
             <Alimentacao />
             <Venha />

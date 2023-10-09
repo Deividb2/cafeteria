@@ -8,7 +8,28 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         box-sizing: border-box;
     }
-`
 
-// font-family: 'Heebo', sans-serif;
-// font-family: 'Playfair Display', serif;
+    @keyframes digitando {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes piscando {
+        50% {
+            border-color: transparent;
+        }
+    }
+`
+// VARIÁVEIS
+export const fontes = {
+    'Heebo': "'Heebo', sans-serif",
+    'Playfair': "'Playfair Display', serif"
+}
+export const cores = {
+    'preto': '#000',
+    'branco': '#fff',
+    'verde': '#404D3C',
+    'bege': '#f7e5d6',
+    'bege2': '#fbf2e8'
+}

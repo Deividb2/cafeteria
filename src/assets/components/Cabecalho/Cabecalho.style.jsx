@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+import { fontes, cores } from '../../../GlobalStyle'
 
 // ÍCONES
 import { BiMenuAltRight } from 'react-icons/bi'
@@ -10,7 +12,7 @@ export const Header = styled.section `
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0.5rem;
-    background-color: #f7e5d6;
+    background-color: ${cores.bege};
 
     @media (min-width: 768px) {
         height: 15vh;
@@ -21,18 +23,19 @@ export const Header = styled.section `
 export const Logo = styled.h1 `
     display: flex;
     font-size: 2.5rem;
-    font-family: 'Playfair Display', serif;
+    font-family: ${fontes.Playfair};
     font-weight: 300;
-    color: #404D3C;
+    color: ${cores.verde};
+    cursor: pointer;
 `
 
 export const Sup = styled.sub `
-    color: #000;
+    color: ${cores.preto};
 `
 
 export const Navegacao = styled.nav `
     display: none;
-    font-family: 'Heebo', sans-serif;
+    font-family: ${fontes.Heebo};
 
     @media (min-width: 768px) {
         display: flex;
@@ -45,11 +48,12 @@ export const Navegacao = styled.nav `
     }
 `
 
-export const Links = styled.a `
-    color: ${(props) => props.cor ? props.cor : '#000'};
+export const Links = styled(Link) `
+    text-decoration: none;
+    color: ${(props) => props.cor ? props.cor : cores.preto};
     
     &:hover {
-        color: #404D3C;
+        color: ${cores.verde};
         cursor: pointer;
     }
 
@@ -62,7 +66,7 @@ export const Links = styled.a `
 
 export const User = styled(FaUserCircle) `
     font-size: 1.8rem;
-    color: #404D3C;
+    color: ${cores.verde};
 `
 
 export const Menu = styled.div `
@@ -72,7 +76,7 @@ export const Menu = styled.div `
 `
 
 export const NavegacaoMB = styled.div `
-    font-family: 'Heebo', sans-serif;
+    font-family: ${fontes.Heebo};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +85,7 @@ export const NavegacaoMB = styled.div `
     height: ${(props) => props.menu ? '100vh' : '0'};
     overflow-y: hidden;
     position: absolute;
-    background-color: #f7e5d6;
+    background-color: ${cores.bege};
     transition: 1s ease-in-out;
 
     @media (min-width: 768px) {

@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { fontes, cores } from '../../../GlobalStyle'
 
 export const Footer = styled.footer `
-    background-color: #f7e5d6;
+    background-color: ${cores.bege};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,14 +12,14 @@ export const Footer = styled.footer `
 
     @media (min-width: 640px) {
         flex-direction: row;
-        gap: 2rem; 
+        gap: 2rem;
         padding: 1rem;
     }
 `
 
 export const Links = styled.a `
-    font-family: 'Heebo', sans-serif;
+    font-family: ${fontes.Heebo};
     font-weight: 200;
     font-size: 14px;
-    color: #000;
+    color: ${cores.preto};
 `
