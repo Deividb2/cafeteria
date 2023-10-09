@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Geral,
-  Div,
-  Titulo,
-  Subtitulo,
-  DivButtons,
-  ButtonLink,
-} from "./BannerHome.style";
+import { Geral, Div, Titulo, Subtitulo, DivButtons, ButtonLink } from "./BannerHome.style";
 
 export default function Banner() {
   return (

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BannerImg from "../../../imgs/Banner.png";
+import BannerImg from "../../../../../public/imgs/Banner.png";
 import { fontes, cores } from "../../../../GlobalStyle";
 
 export const Geral = styled.section`

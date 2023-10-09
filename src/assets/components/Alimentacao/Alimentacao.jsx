@@ -1,8 +1,8 @@
 import React from 'react'
 import { Geral, Secao, Titulo, Subtitulo, Texto, VerMais, Imagem } from './Alimentacao.style'
-import Coma from '../../imgs/Coma.png'
-import Beba from '../../imgs/Beba.png'
-import Curta from '../../imgs/Curta.png'
+import Coma from '../../../../public/imgs/Coma.png'
+import Beba from '../../../../public/imgs/Beba.png'
+import Curta from '../../../../public/imgs/Curta.png'
 
 export default function Alimentacao() {
 
