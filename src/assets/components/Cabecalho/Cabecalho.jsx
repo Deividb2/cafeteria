@@ -31,11 +31,11 @@ export default function Cabecalho() {
         </Header>
 
         <NavegacaoMB menu={menu}>
-            <Links cor='#404D3C'>Início</Links>
-            <Links>Quem somos</Links>
-            <Links>Menu</Links>
-            <Links>Pedidos online</Links>
-            <Links>Contato</Links>
+                <Links cor='#404D3C' to='/'>Início</Links>
+                <Links to='/quem-somos'>Quem somos</Links>
+                <Links to='/menu'>Menu</Links>
+                <Links to='/pedidos'>Pedidos online</Links>
+                <Links to='/contato'>Contato</Links>
         </NavegacaoMB>
     </>
     );

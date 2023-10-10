@@ -22,7 +22,6 @@ export const Secao = styled.div`
   @media (min-width: 768px) {
     place-content: center;
     margin: 0;
-    background-image: none;
   }
 `;
 export const Titulo = styled.h3`

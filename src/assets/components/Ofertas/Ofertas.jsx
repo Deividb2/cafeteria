@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Anuncios, Oferta } from './Ofertas.style' 
+import { Anuncios, Oferta, SetaEsquerda, SetaDireita } from './Ofertas.style' 
 
 const OfertasDia = [
     'Oferta do dia | Café e doce: R$ 15,99',
@@ -11,21 +11,38 @@ export default function Ofertas() {
 
     const [ofertaIndex, setOfertaIndex] = useState(0)
 
+    const anterior = () => {
+        if(ofertaIndex === 0){
+            return setOfertaIndex(OfertasDia.length - 1)
+        } else {
+            return setOfertaIndex((prev) => Math.max(0, prev - 1))
+        }
+    }
+
+    const proximo = () => {
+        if(ofertaIndex === OfertasDia.length - 1){
+            return setOfertaIndex(0)
+        } else {
+            return setOfertaIndex((prev) => Math.min(OfertasDia.length - 1, prev + 1))
+        }
+    }
+
     useEffect(() => {
-        const intervalId = setInterval(() => {
-            setOfertaIndex((prev) => (prev + 1) % OfertasDia.length)
+        const intervalo = setInterval(() => {
+            setOfertaIndex((prev) => Math.min(OfertasDia.length - 1, prev + 1))
         }, 5000)
 
-        return () => clearInterval(intervalId)
-
+        return () => clearInterval(intervalo)
     }, [])
 
     return (
         <>
             <Anuncios>
+                <SetaEsquerda onClick={() => anterior()}>anterior</SetaEsquerda>
                 <Oferta>
                     {OfertasDia[ofertaIndex]}
                 </Oferta>
+                <SetaDireita onClick={() => proximo()}>próximo</SetaDireita>
             </Anuncios>
         </>
     )

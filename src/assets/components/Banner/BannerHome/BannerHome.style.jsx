@@ -32,12 +32,11 @@ export const Titulo = styled.h2`
   font-weight: 300;
   font-family: ${fontes.Heebo};
 
-  border-right: 4px solid ${fontes.Heebo};
-  width: 29ch;
+  border-right: 4px solid ${cores.preto};
+  width: 26ch;
   white-space: nowrap;
   overflow: hidden;
-  animation: digitando 2s steps(29) infinite alternate,
-    piscando 0.5s infinite step-end alternate;
+  animation: digitando 5s steps(29) infinite alternate, piscando 0.5s infinite;
 
   @media (min-width: 640px) {
     font-size: 1.4rem;

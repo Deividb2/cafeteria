@@ -8,7 +8,7 @@ export default function Banner() {
         <Div>
           <Titulo>Café e restaurante desde 2035</Titulo>
           <Subtitulo>
-            Seu local para delícias e<br /> aquele café inigualável
+            Seu local para delícias e aquele café inigualável
           </Subtitulo>
           <DivButtons>
             <ButtonLink>Fazer Pedido</ButtonLink>
