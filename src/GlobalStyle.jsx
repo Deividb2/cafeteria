@@ -30,6 +30,7 @@ export const cores = {
     'preto': '#000',
     'branco': '#fff',
     'verde': '#404D3C',
+    'verde2': '#60695D',
     'bege': '#f7e5d6',
     'bege2': '#fbf2e8'
 }
