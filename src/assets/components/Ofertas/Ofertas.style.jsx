@@ -11,7 +11,7 @@ export const Anuncios = styled.div `
     justify-content: space-between;
     align-items: center;
     transition: all 1s ease-in-out;
-    padding: 0 1rem; //tirar
+    padding: 1.5rem 1rem;
 ` 
 
 export const Oferta = styled.h3 `
@@ -23,9 +23,17 @@ export const Oferta = styled.h3 `
 `
 
 export const SetaEsquerda = styled(IoIosArrowBack) `
-
+    font-size: 2rem;
+    visibility: hidden;
+    @media (min-width: 640px) {
+        visibility: visible;
+    }
 `
 
 export const SetaDireita = styled(IoIosArrowForward) `
-
+    font-size: 2rem;
+    visibility: hidden;
+    @media (min-width: 640px) {
+        visibility: visible;
+    }
 `

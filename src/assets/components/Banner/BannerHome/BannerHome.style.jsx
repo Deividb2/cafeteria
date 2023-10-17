@@ -41,6 +41,10 @@ export const Titulo = styled.h2`
   @media (min-width: 640px) {
     font-size: 1.4rem;
   }
+
+  @media (max-width: 270px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Subtitulo = styled.h1`
