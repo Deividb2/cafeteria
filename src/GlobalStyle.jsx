@@ -23,14 +23,18 @@ export const GlobalStyle = createGlobalStyle`
 `
 // VARIÁVEIS
 export const fontes = {
-    'Heebo': "'Heebo', sans-serif",
-    'Playfair': "'Playfair Display', serif"
+    Heebo: "'Heebo', sans-serif",
+    Playfair: "'Playfair Display', serif"
 }
 export const cores = {
-    'preto': '#000',
-    'branco': '#fff',
-    'verde': '#404D3C',
-    'verde2': '#60695D',
-    'bege': '#f7e5d6',
-    'bege2': '#fbf2e8'
+    preto: '#000',
+    cinza: {
+        100: '#ccc',
+        200: '#e9e9e9'
+    },
+    branco: '#fff',
+    verde: '#404D3C',
+    verde2: '#60695D',
+    bege: '#f7e5d6',
+    bege2: '#fbf2e8'
 }
