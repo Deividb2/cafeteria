@@ -1,4 +1,3 @@
-import React from 'react'
 import { FraseDiv, Frase, Imagem } from './Faixa.style'
 
 export default function Faixa() {

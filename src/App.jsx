@@ -14,24 +14,11 @@ export default function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
-        </Routes>
-        
-        <Routes>
           <Route path='/quem-somos' element={<QuemSomos />} />
-        </Routes>
-        
-        <Routes>
           <Route path='/menu' element={<Menu />} />
-        </Routes>
-        
-        <Routes>
           <Route path='/pedidos' element={<Pedidos />} />
-        </Routes>
-        
-        <Routes>
           <Route path='contato' element={<Contato />} />
         </Routes>
-        
       </Router>
     </>
   )

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Geral, Titulo, Padaria, Subtitulo, Pratos, Cafeteria, Box, SubtituloBox, Descricao, Preco } from './Pedidos.style'
 
 export default function Pedidos() {

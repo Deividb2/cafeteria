@@ -1,4 +1,3 @@
-import React from 'react'
 import { Geral, Titulo, Padaria, Cafeteria, Linha, Pratos, Prato, Descricao, Preco } from './Menu.style'
 
 export default function Menu() {

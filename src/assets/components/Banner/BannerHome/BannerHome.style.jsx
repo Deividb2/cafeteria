@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import BannerImg from "../../../../../public/imgs/Banner.png";
 import { fontes, cores } from "../../../../GlobalStyle";
+import { Link } from "react-router-dom";
 
 export const Geral = styled.section`
   min-height: 100vh;
@@ -17,7 +18,7 @@ export const Geral = styled.section`
   }
 `;
 
-export const Div = styled.div`
+export const Align = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
@@ -31,12 +32,6 @@ export const Titulo = styled.h2`
   font-size: 1.1rem;
   font-weight: 300;
   font-family: ${fontes.Heebo};
-
-  border-right: 4px solid ${cores.preto};
-  width: 26ch;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: digitando 5s steps(29) infinite alternate, piscando 0.5s infinite;
 
   @media (min-width: 640px) {
     font-size: 1.4rem;
@@ -76,7 +71,9 @@ export const DivButtons = styled.div`
   }
 `;
 
-export const ButtonLink = styled.a`
+export const ButtonLink = styled(Link)`
+  text-decoration: none;
+  color: ${(props) => props.cor? props.cor: cores.preto};
   width: 10rem;
   min-height: 3rem;
   display: flex;

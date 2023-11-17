@@ -8,18 +8,6 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         box-sizing: border-box;
     }
-
-    @keyframes digitando {
-        from {
-            width: 0;
-        }
-    }
-
-    @keyframes piscando {
-        50% {
-            border-color: transparent;
-        }
-    }
 `
 // VARIÁVEIS
 export const fontes = {

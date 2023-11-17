@@ -1,4 +1,3 @@
-import React from 'react'
 import { Galery, Fotos } from './Galeria.style'
 
 // IMAGENS

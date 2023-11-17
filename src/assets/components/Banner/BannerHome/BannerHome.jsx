@@ -1,20 +1,20 @@
 import React from "react";
-import { Geral, Div, Titulo, Subtitulo, DivButtons, ButtonLink } from "./BannerHome.style";
+import { Geral, Align, Titulo, Subtitulo, DivButtons, ButtonLink } from "./BannerHome.style";
 
 export default function Banner() {
   return (
     <>
       <Geral>
-        <Div>
+        <Align>
           <Titulo>Café e restaurante desde 2035</Titulo>
           <Subtitulo>
             Seu local para delícias e aquele café inigualável
           </Subtitulo>
           <DivButtons>
-            <ButtonLink>Fazer Pedido</ButtonLink>
-            <ButtonLink>Menu</ButtonLink>
+            <ButtonLink cor='#fff' to='/pedidos'>Fazer Pedido</ButtonLink>
+            <ButtonLink cor='#fff' to='/menu'>Menu</ButtonLink>
           </DivButtons>
-        </Div>
+        </Align>
       </Geral>
     </>
   );

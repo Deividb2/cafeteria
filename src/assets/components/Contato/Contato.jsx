@@ -1,4 +1,3 @@
-import React from 'react'
 import { Geral, Colunas, Titulo, Subtitulo, DivSubTitulo, Label, Email, Enviar, Redes } from './Contato.style'
 
 export default function Contato() {

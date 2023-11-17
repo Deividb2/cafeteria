@@ -1,4 +1,3 @@
-import React from 'react'
 import { Principal, TituloPrincipal, Container, Box, Titulos, Informacoes, Linha } from './Venha.style'
 
 export default function Venha() {

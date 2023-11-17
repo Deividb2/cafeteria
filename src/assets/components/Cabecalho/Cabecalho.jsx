@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Header, Logo, Sup, Navegacao, Links, Menu, NavegacaoMB, AbrirMenu, FecharMenu, User } from './Cabecalho.style'
 
 export default function Cabecalho() {
